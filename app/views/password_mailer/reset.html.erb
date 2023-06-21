@@ -1,0 +1,11 @@
+
+<!-- _path generates relative URLs and _url generates absolute URLs -->
+<!-- We need to use _url in mailers and rails will correct us if we are doing it wrong -->
+Hi, <%= params[:user].email %>,
+
+Someone requested a password reset from your account.
+
+If this was you, click the link below. -->
+<%= link_to "Reset Password", password_reset_edit_url(token: @token)  %>
+
+This link will expire automatically in 15 minutes!

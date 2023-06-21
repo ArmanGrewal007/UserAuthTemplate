@@ -1,0 +1,28 @@
+<h1> Edit Password </h1>
+<!-- Similar to registrations/new.html.erb  -->
+<%= form_with model: Current.user, url:edit_password_path, method: :patch do |form| %>
+    <!-- Display errors on top if any -->
+    <!-- <%= form.object.errors.count %> -->
+    <!-- <%= form.object.errors.full_messages.inspect %> -->
+    <% if form.object.errors.any? %>
+        <div class="alert alert-danger">
+            <!-- Print each error message, inside a div -->
+            <% form.object.errors.full_messages.each do |message| %>
+               <div> <%= message %> </div> 
+            <% end %>
+        </div>
+    <% end %>
+    <!-- 2 fields for password, and password confirmation -->
+    <div class="mb-3">
+        <%= form.label :password %>
+        <%= form.password_field :password, class: "form-control", placeholder: "password"%> 
+    </div>
+    <div class="mb-3">
+        <%= form.label :password_confirmation %>
+        <%= form.password_field :password_confirmation, class: "form-control", placeholder: "password"%> 
+    </div>
+    <div class="mb-3">
+        <!-- Default would be create user !!, coz model is user and method is create -->
+        <%= form.submit "Update Password", class: "btn btn-primary"%>
+    </div>
+<% end %>

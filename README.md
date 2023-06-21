@@ -1,28 +1,6 @@
-<<<<<<< HEAD
-# README
+# Simple template for rails 7 - User Authentication
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+To run this, first you must have ruby installed in your system (ruby 2.6 comes pre-installed in Macs, but it is deprecated so
+we need to install a new version)
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-=======
-# UserAuthTemplate
->>>>>>> f8071e9995124b1139189943d577a21357d602fb
+> brew install rbenv

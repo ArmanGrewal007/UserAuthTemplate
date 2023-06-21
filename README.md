@@ -2,7 +2,7 @@
 
 To run this, first you must have ruby installed in your system (ruby 2.6 comes pre-installed in Macs, but it is deprecated so
 we need to install a new version)
-
+<br> <br> <br>
 ### Steps to install Ruby and Rails
 First install rbenv
 ```terminal
@@ -33,7 +33,7 @@ Install rails gem (we are using **7.0.5**)
 sudo gem install rails --no-document
 ```
 
-
+<br><br><br>
 
 ## Steps to run this repository
 Open terminal and paste - 
@@ -49,7 +49,7 @@ rails s
 ```
 Now, head over to localhost:3000 and see the app running
 
-
+<br><br><br>
 
 ## Some features of this app -->
 1. Implemented Model-View-Controller architecture, under Rails' contraints ofcourse!

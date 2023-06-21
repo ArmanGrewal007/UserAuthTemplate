@@ -33,6 +33,8 @@ Install rails gem (we are using **7.0.5**)
 sudo gem install rails --no-document
 ```
 
+
+
 ## Steps to run this repository
 Open terminal and paste - 
 ```terminal
@@ -47,8 +49,10 @@ rails s
 ```
 Now, head over to localhost:3000 and see the app running
 
+
+
 ## Some features of this app -->
 1. Implemented Model-View-Controller architecture, under Rails' contraints ofcourse!
 2. Separate pages for SignIn and SignUp
-3. SQLite database at backend for storing users, with authentication using [https://en.wikipedia.org/wiki/Bcrypt](bcrypt)
+3. SQLite database at backend for storing users, with authentication using [bcrypt](https://en.wikipedia.org/wiki/Bcrypt)
 4. Functionalities to edit password, reset password by mail
